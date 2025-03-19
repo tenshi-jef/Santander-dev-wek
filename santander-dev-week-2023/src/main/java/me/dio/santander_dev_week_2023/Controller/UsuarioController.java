@@ -18,24 +18,15 @@ public class UsuarioController {
         this.usuarioService = usuarioService;
     }
 
-    @GetMapping("{page}")
-    @Operation(summary = "buscar usuario por id ")
+    @GetMapping
+    @Operation(summary = "Buscar usuario por id ")
     @io.swagger.v3.oas.annotations.responses.ApiResponse(responseCode = "204", description = "Quando nenhum resultado é encontrado")
     @io.swagger.v3.oas.annotations.responses.ApiResponse(responseCode = "200", description = "quando retorna resultado")
-    public ResponseEntity<ApiResponse> BuscarPorID(@RequestParam Long id)
+    public ResponseEntity<Object> BuscarUsuarios()
     {
-        var response = usuarioService.GetById(id);
-        return new ResponseEntity<>(response, HttpStatus.valueOf(response.stausCode));
 
-    }
+        return ResponseEntity.ok("Usuarios");
 
-    @PostMapping
-    @Operation(summary = "Adicionar usuario")
-    @io.swagger.v3.oas.annotations.responses.ApiResponse(responseCode = "201", description = "Usuario criado com sucesso")
-    public ResponseEntity<ApiResponse> CriarUsuario(@ResponseBody Usuario newUsuario)
-    {
-        var response = usuarioService.Create(newUsuario);
-        return new ResponseEntity<>(response, HttpStatus.valueOf(response.statusCode));
     }
 
 }

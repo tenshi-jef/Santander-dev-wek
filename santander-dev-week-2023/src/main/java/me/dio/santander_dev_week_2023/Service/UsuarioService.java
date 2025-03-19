@@ -17,6 +17,4 @@ public class UsuarioService {
         return userRepository.findAll();
     }
 
-    public Object GetById(Long id) {
-    }
 }
