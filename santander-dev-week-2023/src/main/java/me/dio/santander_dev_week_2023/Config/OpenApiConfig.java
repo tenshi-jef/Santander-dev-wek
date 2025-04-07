@@ -12,3 +12,4 @@ public class OpenApiConfig {
         return new OpenAPI().info(new Info().title("User API").version("1.0").description("API para listar usuários"));
     }
 }
+

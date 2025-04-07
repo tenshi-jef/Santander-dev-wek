@@ -4,23 +4,26 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import java.math.BigDecimal;
+
 
 @Getter
 @Setter
 @NoArgsConstructor
 @Entity
-@Table(name = "tb_usuario")
-public class Usuario {
+@Table(name = "tb_conta")
+public class Account {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "nome")
-    private String nome;
+    @Column(name = "usuario_id")
+    private Long usuarioId;
 
-    @Column(name = "email")
-    private String email;
+    @Column(name = "numero")
+    private String numero;
 
-    @Column(name = "senha")
-    private String senha;
+    @Column(name = "saldo")
+    private BigDecimal saldo;
 }

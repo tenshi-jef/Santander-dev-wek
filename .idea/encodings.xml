@@ -2,5 +2,6 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/santander-dev-week-2023/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/santander-dev-week-2023/src/main/java/me/dio/santander_dev_week_2023/Models/Transaction.java" charset="UTF-8" />
   </component>
 </project>

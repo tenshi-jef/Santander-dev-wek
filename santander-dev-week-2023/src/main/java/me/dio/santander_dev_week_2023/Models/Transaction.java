@@ -1,20 +1,17 @@
 package me.dio.santander_dev_week_2023.Models;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
-
-@Getter
-@Setter
+@AllArgsConstructor
 @NoArgsConstructor
+@Data
 @Entity
 @Table(name = "tb_transacao")
-public class Transacao {
+public class Transaction {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -32,5 +29,4 @@ public class Transacao {
     @Column(name = "data_hora")
     private LocalDateTime dataHora;
 }
-
 
