@@ -40,7 +40,7 @@ public class OpenApiConfig {
                         .description("API RESTful para gerenciamento de usuários, contas, cartões e transações bancárias.")
                         .contact(new Contact()
                                 .name("Jef Dev")
-                                .email("contato@santanderdevweek.com")
+                                .email("jefersonsf3276@gmail.com")
                                 .url("https://santanderdevweek.com"))
                         .license(new License()
                                 .name("Apache 2.0")

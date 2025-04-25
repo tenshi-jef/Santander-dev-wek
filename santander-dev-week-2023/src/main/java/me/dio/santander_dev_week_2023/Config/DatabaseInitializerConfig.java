@@ -23,7 +23,8 @@ public class DatabaseInitializerConfig implements ApplicationListener<ContextRef
             "/scripts/account.sql",
             "/scripts/card.sql",
             "/scripts/transactions.sql",
-            "/scripts/limit.sql"
+            "/scripts/limit.sql",
+            "/scripts/newsfeed.sql"
     );
 
     @Override
